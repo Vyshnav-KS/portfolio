@@ -40,7 +40,7 @@ const classes = StyleSheet.create({
 		maxHeight: 420,
 		justifyContent: "center",
 		alignItems: "center",
-		marginTop: 228,
+		marginTop: 200,
 		justifyContent: "space-between",
 	},
 	leftContainer: {

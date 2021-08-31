@@ -19,7 +19,7 @@ const Home = () => {
 					<button className={css(classes.button)}>DOWNLOAD CV</button>
 				</div>
 				<div className={css(classes.image)}>
-					<img src={Developer} alt="Developer Image" />
+					<img src={Developer} alt="Developer" />
 				</div>
 			</div>
 		</div>
@@ -41,7 +41,6 @@ const classes = StyleSheet.create({
 		justifyContent: "center",
 		alignItems: "center",
 		marginTop: 200,
-		justifyContent: "space-between",
 	},
 	leftContainer: {
 		display: "flex",

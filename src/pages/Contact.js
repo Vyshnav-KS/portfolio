@@ -46,7 +46,6 @@ const classes = StyleSheet.create({
 		justifyContent: "center",
 		alignItems: "left",
 		marginTop: 200,
-		justifyContent: "space-between",
 	},
 	title: {
 		textAlign: "left",

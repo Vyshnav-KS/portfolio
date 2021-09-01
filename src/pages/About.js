@@ -7,6 +7,7 @@ import Github from "../assets/icons/ghub.png";
 import Instagram from "../assets/icons/ig.png";
 import Linkedin from "../assets/icons/lin.png";
 import Twitter from "../assets/icons/twt.png";
+import { Link } from "react-router-dom";
 
 const About = () => {
 	return (
@@ -30,7 +31,9 @@ const About = () => {
 					</div>
 				</div>
 				<div className={css(classes.icons)}>
-					<img src={Github} alt="github" className={css(classes.icon)} />
+					<Link to="/https://github.com/Vyshnav-KS">
+						<img src={Github} alt="github" className={css(classes.icon)} />
+					</Link>
 					<img src={Instagram} alt="instagram" className={css(classes.icon)} />
 					<img src={Linkedin} alt="linkedin" className={css(classes.icon)} />
 					<img src={Twitter} alt="twitter" className={css(classes.icon)} />

@@ -1,35 +1,53 @@
 import React from "react";
 import { StyleSheet, css } from "aphrodite";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
 	return (
 		<div className={css(classes.header)}>
 			<div className={css(classes.headerList)}>
-				<Link className={css(classes.headerComp)} value="home" to="/">
-					HOME
-				</Link>
-				<Link
+				<NavLink
 					className={css(classes.headerComp)}
+					activeClassName={css(classes.navActive)}
+					exact
+					value="home"
+					to="/"
+				>
+					HOME
+				</NavLink>
+				<NavLink
+					className={css(classes.headerComp)}
+					activeClassName={css(classes.navActive)}
 					value="works"
 					to="/works"
 					// onClick={Navclick}
 				>
 					WORKS
-				</Link>
-				<Link
+				</NavLink>
+				<NavLink
 					className={css(classes.headerComp)}
+					activeClassName={css(classes.navActive)}
 					value="services"
 					to="/services"
 				>
 					SERVICES
-				</Link>
-				<Link className={css(classes.headerComp)} vlaue="contact" to="/contact">
+				</NavLink>
+				<NavLink
+					className={css(classes.headerComp)}
+					activeClassName={css(classes.navActive)}
+					vlaue="contact"
+					to="/contact"
+				>
 					CONTACT
-				</Link>
-				<Link className={css(classes.headerComp)} value="about" to="/about">
+				</NavLink>
+				<NavLink
+					className={css(classes.headerComp)}
+					activeClassName={css(classes.navActive)}
+					value="about"
+					to="/about"
+				>
 					ABOUT
-				</Link>
+				</NavLink>
 			</div>
 		</div>
 	);
@@ -56,6 +74,10 @@ const classes = StyleSheet.create({
 			color: "#ffffff",
 			fontWeight: "bold",
 		},
+	},
+	navActive: {
+		color: "#ffffff",
+		fontWeight: "bold",
 	},
 });
 

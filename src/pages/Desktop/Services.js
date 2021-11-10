@@ -67,6 +67,16 @@ const classes = StyleSheet.create({
 		maxWidth: 1241,
 		minHeight: 420,
 		marginTop: 187,
+		"@media (max-width: 1536px)": {
+			width: 993,
+			maxHeight: 336,
+			marginTop: 150,
+		},
+		"@media (max-width: 1280px)": {
+			width: 827,
+			maxHeight: 280,
+			marginTop: 125,
+		},
 	},
 	title: {
 		textAlign: "left",
@@ -75,6 +85,14 @@ const classes = StyleSheet.create({
 		lineHeight: "60px",
 		letterSpacing: "0.02em",
 		color: COLORS.secondary,
+		"@media (max-width: 1536px)": {
+			fontSize: 32,
+			lineHeight: "48px",
+		},
+		"@media (max-width: 1280px)": {
+			fontSize: 27,
+			lineHeight: "40px",
+		},
 	},
 	cards: {
 		display: "flex",
@@ -88,18 +106,38 @@ const classes = StyleSheet.create({
 		marginLeft: "auto",
 		marginRight: "auto",
 		marginBottom: 14,
+		"@media (max-width: 1536px)": {
+			marginBottom: 11.2,
+		},
+		"@media (max-width: 1280px)": {
+			marginBottom: 9.3,
+		},
 	},
 	card: {
 		minWidth: 380,
+		padding: "12px 18px",
+		borderRadius: 8,
 		minHeight: 251,
 		marginRight: 14,
 		backgroundColor: COLORS.primary_shade,
-		borderRadius: 8,
 		justifyContent: "center",
 		display: "flex",
 		flexDirection: "column",
 		textAlign: "center",
-		padding: "12px 18px",
+		"@media (max-width: 1536px)": {
+			minWidth: 304,
+			padding: "9.5px 14.4px",
+			borderRadius: 6.4,
+			minHeight: 201,
+			marginRight: 11.2,
+		},
+		"@media (max-width: 1280px)": {
+			minWidth: 253,
+			padding: "8px 12px",
+			borderRadius: 5.3,
+			minHeight: 167,
+			marginRight: 9.3,
+		},
 	},
 	card_title: {
 		letterSpacing: ".05em",
@@ -107,11 +145,27 @@ const classes = StyleSheet.create({
 		fontSize: 22,
 		lineHeight: "33px",
 		color: COLORS.white,
+		"@media (max-width: 1536px)": {
+			fontSize: 17.6,
+			lineHeight: "26.4px",
+		},
+		"@media (max-width: 1280px)": {
+			fontSize: 15,
+			lineHeight: "22px",
+		},
 	},
 	icon: {
 		width: 65,
 		height: 65,
 		textAlign: "center",
+		"@media (max-width: 1536px)": {
+			width: 52,
+			height: 52,
+		},
+		"@media (max-width: 1280px)": {
+			width: 43,
+			height: 43,
+		},
 	},
 });
 

@@ -17,8 +17,8 @@ function App() {
 		return (
 			<BrowserRouter>
 				<div className="app">
+					<NavBar />
 					<Switch>
-						<NavBar />
 						<Route path="/" component={HomeMob} exact></Route>
 					</Switch>
 				</div>

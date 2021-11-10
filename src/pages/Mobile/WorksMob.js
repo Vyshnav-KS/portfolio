@@ -58,6 +58,10 @@ const styles = StyleSheet.create({
 		background: "rgba(88, 88, 88, 0.31)",
 		borderRadius: 8,
 		padding: "8px 18px",
+		minHeight: 157,
+		display: "flex",
+		flexDirection: "column",
+		justifyContent: "space-between",
 	},
 	title: {
 		fontSize: 20,

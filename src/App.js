@@ -11,6 +11,7 @@ import HomeMob from "./pages/Mobile/HomeMob";
 import useDeviceType from "./hooks/deviceType";
 import WorksMob from "./pages/Mobile/WorksMob";
 import NavBar from "./pages/Mobile/NavBar";
+import ServicesMob from "./pages/Mobile/ServicesMob";
 
 function App() {
 	const deviceType = useDeviceType();
@@ -22,6 +23,7 @@ function App() {
 					<Switch>
 						<Route path="/" component={HomeMob} exact></Route>
 						<Route path="/works" component={WorksMob} exact></Route>
+						<Route path="/services" component={ServicesMob} exact></Route>
 					</Switch>
 				</div>
 			</BrowserRouter>

@@ -12,6 +12,8 @@ import useDeviceType from "./hooks/deviceType";
 import WorksMob from "./pages/Mobile/WorksMob";
 import NavBar from "./pages/Mobile/NavBar";
 import ServicesMob from "./pages/Mobile/ServicesMob";
+import ContactMob from "./pages/Mobile/ContactMob";
+import AboutMob from "./pages/Mobile/AboutMob";
 
 function App() {
 	const deviceType = useDeviceType();
@@ -24,6 +26,8 @@ function App() {
 						<Route path="/" component={HomeMob} exact></Route>
 						<Route path="/works" component={WorksMob} exact></Route>
 						<Route path="/services" component={ServicesMob} exact></Route>
+						<Route path="/contact" component={ContactMob} exact></Route>
+						<Route path="/about" component={AboutMob} exact></Route>
 					</Switch>
 				</div>
 			</BrowserRouter>

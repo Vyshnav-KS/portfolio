@@ -9,6 +9,7 @@ import Services from "./pages/Desktop/Services";
 import Contact from "./pages/Desktop/Contact";
 import HomeMob from "./pages/Mobile/HomeMob";
 import useDeviceType from "./hooks/deviceType";
+import NavBar from "./pages/Mobile/NavBar";
 
 function App() {
 	const deviceType = useDeviceType();
@@ -17,6 +18,7 @@ function App() {
 			<BrowserRouter>
 				<div className="app">
 					<Switch>
+						<NavBar />
 						<Route path="/" component={HomeMob} exact></Route>
 					</Switch>
 				</div>

@@ -57,6 +57,12 @@ const classes = StyleSheet.create({
 	header: {
 		textAlign: "center",
 		marginTop: 78,
+		"@media (max-width: 1536px)": {
+			marginTop: 63,
+		},
+		"@media (max-width: 1280px)": {
+			marginTop: 52,
+		},
 	},
 	headerList: {
 		display: "flex",
@@ -66,6 +72,12 @@ const classes = StyleSheet.create({
 		maxWidth: 520,
 		alignItems: "center",
 		justifyContent: "space-between",
+		"@media (max-width: 1536px)": {
+			maxWidth: 416,
+		},
+		"@media (max-width: 1280px)": {
+			maxWidth: 347,
+		},
 	},
 	headerComp: {
 		color: "#585858",
@@ -73,6 +85,12 @@ const classes = StyleSheet.create({
 		":hover": {
 			color: "#ffffff",
 			fontWeight: "bold",
+		},
+		"@media (max-width: 1536px)": {
+			fontSize: 14.5,
+		},
+		"@media (max-width: 1280px)": {
+			fontSize: 12,
 		},
 	},
 	navActive: {

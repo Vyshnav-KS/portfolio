@@ -16,7 +16,7 @@ const About = () => {
 				<span className={css(classes.title)}>ABOUT</span>
 				<div className={css(classes.contents)}>
 					<div className={css(classes.image)}>
-						<img src={DP} alt="dp" />
+						<img src={DP} alt="dp" className={css(classes.dp)} />
 					</div>
 					<div>
 						<span className={css(classes.description)}>
@@ -83,6 +83,16 @@ const classes = StyleSheet.create({
 		maxWidth: 1241,
 		minHeight: 420,
 		marginTop: 170,
+		"@media (max-width: 1536px)": {
+			maxWidth: 993,
+			minHeight: 336,
+			marginTop: 136,
+		},
+		"@media (max-width: 1280px)": {
+			maxWidth: 827,
+			minHeight: 280,
+			marginTop: 113,
+		},
 	},
 	title: {
 		textAlign: "left",
@@ -91,16 +101,40 @@ const classes = StyleSheet.create({
 		lineHeight: "60px",
 		letterSpacing: "0.02em",
 		color: COLORS.secondary,
+		"@media (max-width: 1536px)": {
+			fontSize: 32,
+			lineHeight: "48px",
+		},
+		"@media (max-width: 1280px)": {
+			fontSize: 27,
+			lineHeight: "40px",
+		},
 	},
 	contents: {
 		display: "flex",
 		flexDirection: "row",
 		marginTop: 18,
+		"@media (max-width: 1536px)": {
+			marginTop: 15,
+		},
+		"@media (max-width: 1280px)": {
+			marginTop: 12,
+		},
 	},
 	image: {
 		maxWidth: 271,
 		maxHeight: 297,
 		marginRight: 47,
+		"@media (max-width: 1536px)": {
+			maxWidth: 217,
+			maxHeight: 238,
+			marginRight: 38,
+		},
+		"@media (max-width: 1280px)": {
+			maxWidth: 181,
+			maxHeight: 198,
+			marginRight: 31,
+		},
 	},
 	description: {
 		fontSize: 27,
@@ -108,17 +142,53 @@ const classes = StyleSheet.create({
 		lineHeight: "40px",
 		letterSpacing: "0.03em",
 		color: COLORS.white,
+		"@media (max-width: 1536px)": {
+			fontSize: 22,
+			lineHeight: "32px",
+		},
+		"@media (max-width: 1280px)": {
+			fontSize: 18,
+			lineHeight: "27px",
+		},
 	},
 	icons: {
 		display: "flex",
 		maxWidth: 271,
 		justifyContent: "space-between",
 		marginTop: 49,
+		"@media (max-width: 1536px)": {
+			maxWidth: 217,
+			marginTop: 39,
+		},
+		"@media (max-width: 1280px)": {
+			maxWidth: 181,
+			marginTop: 33,
+		},
 	},
 	icon: {
 		width: 50,
 		height: 50,
 		cursor: "pointer",
+		"@media (max-width: 1536px)": {
+			width: 40,
+			height: 40,
+		},
+		"@media (max-width: 1280px)": {
+			width: 33,
+			height: 33,
+		},
+	},
+	dp: {
+		width: 270,
+		height: 297,
+		"@media (max-width: 1536px)": {
+			width: 216,
+			height: 238,
+		},
+		"@media (max-width: 1280px)": {
+			width: 180,
+			height: 198,
+		},
 	},
 });
 

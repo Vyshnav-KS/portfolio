@@ -8,7 +8,9 @@ const HomeMobile = () => {
 			<div className={css(styles.container)}>
 				<div className={css(styles.name)}>Hey! I’m Vyshnav</div>
 				<div className={css(styles.title)}>FRONT-END DEVELOPER</div>
-				<img src={Dev} alt="" className={css(styles.dev)} />
+				<div className={css(styles.image)}>
+					<img src={Dev} alt="" className={css(styles.dev)} />
+				</div>
 				<div className={css(styles.description)}>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam quisque
 					porttitor diam, pellentesque mauris turpis ut ullamcorper.
@@ -44,8 +46,14 @@ const styles = StyleSheet.create({
 		fontWeight: "bold",
 		color: "#00ECEC",
 	},
+	image: {
+		textAlign: "center",
+		alignItems: "center",
+	},
 	dev: {
 		marginTop: 20,
+		maxWidth: 314,
+		maxHeight: 314,
 	},
 	description: {
 		marginTop: 30,
@@ -61,6 +69,7 @@ const styles = StyleSheet.create({
 		borderRadius: 8,
 		fontSize: 13,
 		marginTop: 24,
+		marginBottom: 24,
 		fontWeight: 500,
 		textAlign: "center",
 		alignItems: "center",

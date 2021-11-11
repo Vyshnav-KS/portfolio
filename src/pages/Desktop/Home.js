@@ -16,7 +16,17 @@ const Home = () => {
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam
 						quisque porttitor diam, pellentesque mauris turpis
 					</span>
-					<button className={css(classes.button)}>DOWNLOAD CV</button>
+					<button
+						className={css(classes.button)}
+						onClick={() => {
+							window.open(
+								"https://drive.google.com/file/d/1eqYQHKm5lHeK3iwiW1l5kSIHLpZdmoB4/view?usp=sharing",
+								"_blank"
+							);
+						}}
+					>
+						DOWNLOAD CV
+					</button>
 				</div>
 				<div className={css(classes.image)}>
 					<img

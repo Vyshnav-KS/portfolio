@@ -12,7 +12,7 @@ const AboutMob = () => {
 		<div className={css(styles.root)}>
 			<div className={css(styles.container)}>
 				<div className={css(styles.heading)}>ABOUT ME</div>
-				<img src={DP} alt="" className={css(styles.dp)} />
+				<img src={DP} alt="icons" className={css(styles.dp)} />
 				<div className={css(styles.description)}>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem
 					scelerisque egestas at risus convallis turpis. Aliquet urna eget
@@ -20,10 +20,42 @@ const AboutMob = () => {
 					auctor nisl purus porta suspendisse. Tellus feugiat.
 				</div>
 				<div className={css(styles.icons)}>
-					<img src={Instagram} alt="" className={css(styles.icon)} />
-					<img src={Github} alt="" className={css(styles.icon)} />
-					<img src={Linkedin} alt="" className={css(styles.icon)} />
-					<img src={Twitter} alt="" className={css(styles.icon)} />
+					<img
+						src={Github}
+						alt="icons"
+						className={css(styles.icon)}
+						onTouchStart={() => {
+							window.open("https://github.com/Vyshnav-KS", "_blank");
+						}}
+					/>
+					<img
+						src={Instagram}
+						alt="icons"
+						className={css(styles.icon)}
+						onTouchStart={() => {
+							window.open("https://www.instagram.com/____vyshnav_", "_blank");
+						}}
+					/>
+
+					<img
+						src={Linkedin}
+						alt="icons"
+						className={css(styles.icon)}
+						onTouchStart={() => {
+							window.open(
+								"https://www.linkedin.com/in/vyshnav-ks-a5b5351a5",
+								"_blank"
+							);
+						}}
+					/>
+					<img
+						src={Twitter}
+						alt="icons"
+						className={css(styles.icon)}
+						onTouchStart={() => {
+							window.open("https://twitter.com/VyshnavKS2", "_blank");
+						}}
+					/>
 				</div>
 			</div>
 		</div>

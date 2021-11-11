@@ -7,30 +7,60 @@ const WorkMob = () => {
 			<div className={css(styles.container)}>
 				<div className={css(styles.heading)}>PORTFOLIO</div>
 				<div className={css(styles.card)}>
-					<div className={css(styles.title)}>APP NAME</div>
+					<div className={css(styles.title)}>PORTFOLIO WEBSITE</div>
 					<div className={css(styles.description)}>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Laoreet
-						lectus amet egestas feugiat
+						A portfolio website created using react js which shows resume,
+						works, services, contact info and about me.
 					</div>
-					<div className={css(styles.link)}>know more</div>
+					<div
+						className={css(styles.link)}
+						onTouchStart={() => {
+							window.open("https://github.com/Vyshnav-KS/portfolio", "_blank");
+						}}
+					>
+						know more
+					</div>
 				</div>
 				<div className={css(styles.card)}>
-					<div className={css(styles.title)}>APP NAME</div>
+					<div className={css(styles.title)}>HACKCLUB CUCEK WEBSITE</div>
 					<div className={css(styles.description)}>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Laoreet
-						lectus amet egestas feugiat
+						Worked on front-end part of Hack Club CUCEK community website.
 					</div>
-					<div className={css(styles.link)}>know more</div>
+					<div
+						className={css(styles.link)}
+						onTouchStart={() => {
+							window.open("https://github.com/hackclub-cucek/v4", "_blank");
+						}}
+					>
+						know more
+					</div>
 				</div>
 				<div className={css(styles.card)}>
-					<div className={css(styles.title)}>APP NAME</div>
+					<div className={css(styles.title)}>MOVIEZONE</div>
 					<div className={css(styles.description)}>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Laoreet
-						lectus amet egestas feugiat
+						A web app build using react js which user can search their favourite
+						movies or tv shows, see trailers, cast information, posters, etc.
 					</div>
-					<div className={css(styles.link)}>know more</div>
+					<div
+						className={css(styles.link)}
+						onTouchStart={() => {
+							window.open("https://github.com/Vyshnav-KS/Moviezone", "_blank");
+						}}
+					>
+						know more
+					</div>
 				</div>
-				<button className={css(styles.button)}>MORE PROJECTS</button>
+				<button
+					className={css(styles.button)}
+					onTouchStart={() => {
+						window.open(
+							"https://github.com/Vyshnav-KS?tab=repositories",
+							"_blank"
+						);
+					}}
+				>
+					MORE PROJECTS
+				</button>
 			</div>
 		</div>
 	);

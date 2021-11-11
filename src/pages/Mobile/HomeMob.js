@@ -15,7 +15,18 @@ const HomeMobile = () => {
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam quisque
 					porttitor diam, pellentesque mauris turpis ut ullamcorper.
 				</div>
-				<button className={css(styles.button)}> DOWNLOAD CV </button>
+				<button
+					className={css(styles.button)}
+					onTouchStart={() => {
+						window.open(
+							"https://drive.google.com/file/d/1eqYQHKm5lHeK3iwiW1l5kSIHLpZdmoB4/view?usp=sharing",
+							"_blank"
+						);
+					}}
+				>
+					{" "}
+					DOWNLOAD CV{" "}
+				</button>
 			</div>
 		</div>
 	);

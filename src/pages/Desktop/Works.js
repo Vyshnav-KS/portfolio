@@ -12,58 +12,127 @@ const Works = () => {
 				<div className={css(classes.cards)}>
 					<div className={css(classes.card_r)}>
 						<div className={css(classes.card)}>
-							<span className={css(classes.card_title)}>APP NAME</span>
+							<span className={css(classes.card_title)}>PORTFOLIO WEBSITE</span>
 							<span className={css(classes.card_desc)}>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Laoreet
-								lectus amet egestas feugiat
+								A portfolio website created using react js which shows resume,
+								works, services, contact info and about me.
 							</span>
-							<button className={css(classes.card_button)}>KNOW MORE</button>
+							<button
+								className={css(classes.card_button)}
+								onClick={() => {
+									window.open(
+										"https://github.com/Vyshnav-KS/portfolio",
+										"_blank"
+									);
+								}}
+							>
+								KNOW MORE
+							</button>
 						</div>
 						<div className={css(classes.card)}>
-							<span className={css(classes.card_title)}>APP NAME</span>
+							<span className={css(classes.card_title)}>DAILY NEWS</span>
 							<span className={css(classes.card_desc)}>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Laoreet
-								lectus amet egestas feugiat
+								A flutter app that provides latest news which users can filter
+								corresponding to their favourite categories.
 							</span>
-							<button className={css(classes.card_button)}>KNOW MORE</button>
+							<button
+								className={css(classes.card_button)}
+								onClick={() => {
+									window.open(
+										"https://github.com/Vyshnav-KS/DailyNews",
+										"_blank"
+									);
+								}}
+							>
+								KNOW MORE
+							</button>
 						</div>
 						<div className={css(classes.card)}>
-							<span className={css(classes.card_title)}>APP NAME</span>
-							<span className={css(classes.card_desc)}>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Laoreet
-								lectus amet egestas feugiat
+							<span className={css(classes.card_title)}>
+								HACKCLUB CUCEK WEBSITE
 							</span>
-							<button className={css(classes.card_button)}>KNOW MORE</button>
+							<span className={css(classes.card_desc)}>
+								Worked on front-end part of Hack Club CUCEK community website.
+							</span>
+							<button
+								className={css(classes.card_button)}
+								onClick={() => {
+									window.open("https://github.com/hackclub-cucek/v4", "_blank");
+								}}
+							>
+								KNOW MORE
+							</button>
 						</div>
 					</div>
 					<div className={css(classes.card_r)}>
 						<div className={css(classes.card)}>
-							<span className={css(classes.card_title)}>APP NAME</span>
+							<span className={css(classes.card_title)}>MOVIEZONE</span>
 							<span className={css(classes.card_desc)}>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Laoreet
-								lectus amet egestas feugiat
+								A web app build using react js which user can search their
+								favourite movies or tv shows, see trailers, cast information,
+								posters, etc.
 							</span>
-							<button className={css(classes.card_button)}>KNOW MORE</button>
+							<button
+								className={css(classes.card_button)}
+								onClick={() => {
+									window.open(
+										"https://github.com/Vyshnav-KS/Moviezone",
+										"_blank"
+									);
+								}}
+							>
+								KNOW MORE
+							</button>
 						</div>
 						<div className={css(classes.card)}>
-							<span className={css(classes.card_title)}>APP NAME</span>
+							<span className={css(classes.card_title)}>DAILYDO</span>
 							<span className={css(classes.card_desc)}>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Laoreet
-								lectus amet egestas feugiat
+								A todo flutter mobile application where users can create an
+								account and add daily tasks. Users can also login and logout.
 							</span>
-							<button className={css(classes.card_button)}>KNOW MORE</button>
+							<button
+								className={css(classes.card_button)}
+								onClick={() => {
+									window.open(
+										"https://github.com/Vyshnav-KS/Daily-Do",
+										"_blank"
+									);
+								}}
+							>
+								KNOW MORE
+							</button>
 						</div>
 						<div className={css(classes.card)}>
-							<span className={css(classes.card_title)}>APP NAME</span>
+							<span className={css(classes.card_title)}>QUOTE BOT</span>
 							<span className={css(classes.card_desc)}>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Laoreet
-								lectus amet egestas feugiat
+								A discord bot which replies encouraging quotes when a sad word
+								is said by user. Build using nodejs and express js.
 							</span>
-							<button className={css(classes.card_button)}>KNOW MORE</button>
+							<button
+								className={css(classes.card_button)}
+								onClick={() => {
+									window.open(
+										"https://github.com/Vyshnav-KS/Quote-Bot",
+										"_blank"
+									);
+								}}
+							>
+								KNOW MORE
+							</button>
 						</div>
 					</div>
 				</div>
-				<button className={css(classes.button)}>MORE PROJECTS</button>
+				<button
+					className={css(classes.button)}
+					onClick={() => {
+						window.open(
+							"https://github.com/Vyshnav-KS?tab=repositories",
+							"_blank"
+						);
+					}}
+				>
+					MORE PROJECTS
+				</button>
 			</div>
 		</div>
 	);
@@ -130,7 +199,7 @@ const classes = StyleSheet.create({
 		},
 	},
 	card: {
-		maxWidth: 404,
+		minWidth: 404,
 		padding: "12px 18px",
 		borderRadius: 8,
 		maxHeight: 178,
@@ -141,14 +210,14 @@ const classes = StyleSheet.create({
 		flexDirection: "column",
 		textAlign: "left",
 		"@media (max-width: 1536px)": {
-			maxWidth: 323,
+			minWidth: 323,
 			padding: "9.6px 14.4px",
 			borderRadius: 6.4,
 			maxHeight: 142,
 			marginRight: 11.2,
 		},
 		"@media (max-width: 1280px)": {
-			maxWidth: 269,
+			minWidth: 269,
 			padding: "8px 12px",
 			borderRadius: 5.3,
 			maxHeight: 119,

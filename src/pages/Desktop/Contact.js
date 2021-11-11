@@ -16,12 +16,22 @@ const Contact = () => {
 					hello!
 				</span>
 				<div className={css(classes.btn)}>
-					<button className={css(classes.button)}>
+					<button
+						className={css(classes.button)}
+						onClick={() => {
+							window.open("mailto: vyshnavks85@gmail.com", "_blank");
+						}}
+					>
 						<img src={Mail} alt="mail icon" className={css(classes.btnIcon)} />
 
 						<span className={css(classes.btntxt)}>say hello!</span>
 					</button>
-					<button className={css(classes.button)}>
+					<button
+						className={css(classes.button)}
+						onClick={() => {
+							window.open("https://wa.me/+919072048028", "_blank");
+						}}
+					>
 						<img src={Call} alt="call icon" className={css(classes.btnIcon)} />
 						<span className={css(classes.btntxt)}>give a buzz</span>
 					</button>

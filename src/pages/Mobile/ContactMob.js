@@ -14,11 +14,21 @@ const ContactMob = () => {
 						I like to create things with fun, open-minded people. Feel free to
 						say hello!
 					</div>
-					<div className={css(styles.button)}>
+					<div
+						className={css(styles.button)}
+						onTouchStart={() => {
+							window.open("mailto: vyshnavks85@gmail.com", "_blank");
+						}}
+					>
 						<img src={Mail} alt="" className={css(styles.icon)} />
 						<div className={css(styles.btnTxt)}>say hello!</div>
 					</div>
-					<div className={css(styles.button)}>
+					<div
+						className={css(styles.button)}
+						onTouchStart={() => {
+							window.open("https://wa.me/+919072048028", "_blank");
+						}}
+					>
 						<img src={Call} alt="" className={css(styles.icon)} />
 						<div className={css(styles.btnTxt)}>give a buzz</div>
 					</div>

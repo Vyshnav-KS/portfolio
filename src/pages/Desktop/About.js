@@ -35,7 +35,7 @@ const About = () => {
 						alt="github"
 						className={css(classes.icon)}
 						onClick={() => {
-							window.location.href = "https://github.com/Vyshnav-KS";
+							window.open("https://github.com/Vyshnav-KS", "_blank");
 						}}
 					/>
 					<img
@@ -43,7 +43,7 @@ const About = () => {
 						alt="instagram"
 						className={css(classes.icon)}
 						onClick={() => {
-							window.location.href = "https://www.instagram.com/____vyshnav_";
+							window.open("https://www.instagram.com/____vyshnav_", "_blank");
 						}}
 					/>
 					<img
@@ -51,8 +51,10 @@ const About = () => {
 						alt="linkedin"
 						className={css(classes.icon)}
 						onClick={() => {
-							window.location.href =
-								"https://www.linkedin.com/in/vyshnav-ks-a5b5351a5";
+							window.open(
+								"https://www.linkedin.com/in/vyshnav-ks-a5b5351a5",
+								"_blank"
+							);
 						}}
 					/>
 					<img
@@ -60,7 +62,7 @@ const About = () => {
 						alt="twitter"
 						className={css(classes.icon)}
 						onClick={() => {
-							window.location.href = "https://twitter.com/VyshnavKS2";
+							window.open("https://twitter.com/VyshnavKS2", "_blank");
 						}}
 					/>
 				</div>

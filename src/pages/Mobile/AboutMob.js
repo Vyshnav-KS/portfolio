@@ -1,6 +1,6 @@
 import React from "react";
 import { COLORS } from "../../styles/constants";
-import DP from "../../assets/images/dp.png";
+import DP from "../../assets/images/dp-web.png";
 import Github from "../../assets/icons/ghub.png";
 import Instagram from "../../assets/icons/ig.png";
 import Linkedin from "../../assets/icons/lin.png";
@@ -14,10 +14,31 @@ const AboutMob = () => {
 				<div className={css(styles.heading)}>ABOUT ME</div>
 				<img src={DP} alt="icons" className={css(styles.dp)} />
 				<div className={css(styles.description)}>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem
-					scelerisque egestas at risus convallis turpis. Aliquet urna eget
-					commodo turpis dictum nunc. Risus sapien, consequat, pellentesque
-					auctor nisl purus porta suspendisse. Tellus feugiat.
+					I'm an{" "}
+					<span className={css(styles.hilted)}>
+						engineering aspirant student
+					</span>{" "}
+					who is enthusiastic about technology. <br />
+					<br />
+					Currently, I'm doing my Bachelor's degree, specializing in Computer
+					Science and Engineering at{" "}
+					<span
+						className={css(styles.hilted)}
+						onClick={() => {
+							window.open("https://cusat.ac.in/", "_blank");
+						}}
+					>
+						CUSAT
+					</span>
+					. I have proficient skills in
+					<span className={css(styles.hilted)}>
+						{" "}
+						React, Gatsby, Node, Flutter, Python, HTML/CSS,
+					</span>{" "}
+					etc. <br />
+					<br /> I'm always happy to{" "}
+					<span className={css(styles.hilted)}> connect</span> with new people
+					to share my experiences and also learn from them.
 				</div>
 				<div className={css(styles.icons)}>
 					<img
@@ -81,8 +102,9 @@ const styles = StyleSheet.create({
 		color: COLORS.secondary,
 	},
 	dp: {
-		width: 230,
+		width: 260,
 		height: 260,
+		borderRadius: 8,
 	},
 	description: {
 		fontSize: 18,
@@ -99,6 +121,10 @@ const styles = StyleSheet.create({
 	icon: {
 		width: 30,
 		height: 30,
+	},
+	hilted: {
+		color: COLORS.secondary,
+		cursor: "pointer",
 	},
 });
 

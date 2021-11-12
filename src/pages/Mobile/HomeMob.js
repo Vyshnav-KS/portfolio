@@ -12,8 +12,8 @@ const HomeMobile = () => {
 					<img src={Dev} alt="" className={css(styles.dev)} />
 				</div>
 				<div className={css(styles.description)}>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam quisque
-					porttitor diam, pellentesque mauris turpis ut ullamcorper.
+					I like to craft solid and scalable frontend products with great user
+					experiences.
 				</div>
 				<button
 					className={css(styles.button)}

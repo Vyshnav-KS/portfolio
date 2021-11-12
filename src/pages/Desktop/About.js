@@ -2,7 +2,7 @@ import React from "react";
 import { StyleSheet, css } from "aphrodite";
 import Header from "../../components/Header/Header";
 import { COLORS } from "../../styles/constants";
-import DP from "../../assets/images/dp.png";
+import DP from "../../assets/images/dp-web.png";
 import Github from "../../assets/icons/ghub.png";
 import Instagram from "../../assets/icons/ig.png";
 import Linkedin from "../../assets/icons/lin.png";
@@ -20,12 +20,30 @@ const About = () => {
 					</div>
 					<div>
 						<span className={css(classes.description)}>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. At at
-							nullam sed pharetra phasellus sapien. Scelerisque cras vestibulum
-							rutrum non eget volutpat. Vitae pharetra interdum erat sed
-							pulvinar lacus, purus amet. Dictum ac, non gestas. Ultrices
-							eleifend quis interdum nulla convallis. Morbi non amet aliquet..
-							Morbi non amet aliquet interdum nulla convallis. Morbi non ame.
+							I'm an{" "}
+							<span className={css(classes.hilted)}>
+								engineering aspirant student
+							</span>{" "}
+							who is enthusiastic about technology. <br />
+							Currently, I'm doing my Bachelor's degree, specializing in
+							Computer Science and Engineering at{" "}
+							<span
+								className={css(classes.hilted)}
+								onClick={() => {
+									window.open("https://cusat.ac.in/", "_blank");
+								}}
+							>
+								CUSAT
+							</span>
+							. I have proficient skills in
+							<span className={css(classes.hilted)}>
+								{" "}
+								React, Gatsby, Node, Flutter, Python, HTML/CSS,
+							</span>{" "}
+							etc. <br />
+							<br /> I'm always happy to{" "}
+							<span className={css(classes.hilted)}> connect</span> with new
+							people to share my experiences and also learn from them.
 						</span>
 					</div>
 				</div>
@@ -181,16 +199,26 @@ const classes = StyleSheet.create({
 		},
 	},
 	dp: {
-		width: 270,
+		borderRadius: 8,
+		marginTop: 10,
+		width: 297,
 		height: 297,
 		"@media (max-width: 1536px)": {
-			width: 216,
+			borderRadius: 6.4,
+			marginTop: 8,
+			width: 238,
 			height: 238,
 		},
 		"@media (max-width: 1280px)": {
-			width: 180,
+			borderRadius: 5.3,
+			marginTop: 6.6,
+			width: 198,
 			height: 198,
 		},
+	},
+	hilted: {
+		color: COLORS.secondary,
+		cursor: "pointer",
 	},
 });
 

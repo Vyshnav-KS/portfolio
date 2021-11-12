@@ -13,8 +13,8 @@ const Home = () => {
 					<span className={css(classes.name)}>Hey! I'm Vyshnav</span>
 					<span className={css(classes.title)}>FRONT-END DEVELOPER</span>
 					<span className={css(classes.description)}>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam
-						quisque porttitor diam, pellentesque mauris turpis
+						I like to craft solid and scalable frontend products with great user
+						experiences.
 					</span>
 					<button
 						className={css(classes.button)}
@@ -120,6 +120,7 @@ const classes = StyleSheet.create({
 		marginBottom: 45,
 		lineHeight: "43px",
 		color: COLORS.white,
+
 		"@media (max-width: 1536px)": {
 			fontSize: 22.4,
 			marginBottom: 36,

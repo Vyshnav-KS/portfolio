@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
 		fontSize: 24,
 		lineHeight: "36px",
 		fontWeight: "bold",
-		color: "#00ECEC",
+		color: COLORS.secondary,
 	},
 	contents: {
 		display: "flex",

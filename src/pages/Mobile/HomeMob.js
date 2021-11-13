@@ -1,6 +1,7 @@
 import { css, StyleSheet } from "aphrodite";
 import React from "react";
 import Dev from "../../assets/images/wdev.png";
+import { COLORS } from "../../styles/constants";
 
 const HomeMobile = () => {
 	return (
@@ -43,7 +44,7 @@ const styles = StyleSheet.create({
 		width: "100%",
 	},
 	name: {
-		color: "#ffffff",
+		color: COLORS.white,
 		fontSize: 18,
 		lineHeight: "27px",
 		marginTop: 28,
@@ -55,7 +56,7 @@ const styles = StyleSheet.create({
 		lineHeight: "42px",
 		// letterSpacing: ".02em",
 		fontWeight: "bold",
-		color: "#00ECEC",
+		color: COLORS.secondary,
 	},
 	image: {
 		textAlign: "center",
@@ -70,11 +71,11 @@ const styles = StyleSheet.create({
 		marginTop: 30,
 		fontSize: 18,
 		lineHeight: "26px",
-		color: "#ffffff",
+		color: COLORS.white,
 	},
 	button: {
 		background: "transparent",
-		border: "1px solid #00ECEC",
+		border: `1px solid ${COLORS.secondary}`,
 		width: 154,
 		height: 40,
 		borderRadius: 8,
@@ -84,7 +85,7 @@ const styles = StyleSheet.create({
 		fontWeight: 500,
 		textAlign: "center",
 		alignItems: "center",
-		color: "#ffffff",
+		color: COLORS.white,
 	},
 });
 

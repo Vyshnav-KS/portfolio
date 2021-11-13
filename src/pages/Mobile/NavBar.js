@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Menu from "../../assets/icons/menubar.png";
 import MenuCross from "../../assets/icons/cross.png";
 import { NavLink } from "react-router-dom";
+import { COLORS } from "../../styles/constants";
 
 const NavBar = () => {
 	const [sidebar, setSidebar] = useState(false);
@@ -105,7 +106,7 @@ const styles = StyleSheet.create({
 		height: "100vh",
 		width: "100%",
 		position: "fixed",
-		backgroundColor: "#00ECEC",
+		backgroundColor: COLORS.secondary,
 	},
 	menuBarCross: {
 		display: "flex",
@@ -123,7 +124,7 @@ const styles = StyleSheet.create({
 		alignItems: "center",
 	},
 	link: {
-		color: "#000000",
+		color: COLORS.primary,
 		textDecoration: "none",
 	},
 	linkActive: {

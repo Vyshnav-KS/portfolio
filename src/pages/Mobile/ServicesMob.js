@@ -3,6 +3,7 @@ import React from "react";
 import mobApp from "../../assets/icons/mobApp.png";
 import webDev from "../../assets/icons/webDev.png";
 import uiDes from "../../assets/icons/uiDes.png";
+import { COLORS } from "../../styles/constants";
 
 const ServicesMob = () => {
 	return (
@@ -42,10 +43,10 @@ const styles = StyleSheet.create({
 		fontSize: 24,
 		lineHeight: "36px",
 		fontWeight: "bold",
-		color: "#00ECEC",
+		color: COLORS.secondary,
 	},
 	card: {
-		background: "rgba(88, 88, 88, 0.31)",
+		background: COLORS.primary_shade,
 		borderRadius: 8,
 		minHeight: 180,
 		display: "flex",
@@ -61,7 +62,7 @@ const styles = StyleSheet.create({
 		fontWeight: 600,
 		fontSize: 20,
 		lineHeight: "30px",
-		color: "#ffffff",
+		color: COLORS.white,
 		letterSpacing: "0.02em",
 	},
 });

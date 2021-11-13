@@ -1,5 +1,6 @@
 import React from "react";
 import { css, StyleSheet } from "aphrodite";
+import { COLORS } from "../../styles/constants";
 
 const WorkMob = () => {
 	return (
@@ -82,10 +83,10 @@ const styles = StyleSheet.create({
 		fontSize: 24,
 		lineHeight: "36px",
 		fontWeight: "bold",
-		color: "#00ECEC",
+		color: COLORS.secondary,
 	},
 	card: {
-		background: "rgba(88, 88, 88, 0.31)",
+		background: COLORS.primary_shade,
 		borderRadius: 8,
 		padding: "8px 18px",
 		minHeight: 157,
@@ -97,22 +98,22 @@ const styles = StyleSheet.create({
 		fontSize: 20,
 		lineHeight: "30px",
 		fontWeight: 600,
-		color: "#00ECEC",
+		color: COLORS.secondary,
 	},
 	description: {
 		fontSize: 17,
 		lineHeight: "25px",
-		color: "#ffffff",
+		color: COLORS.white,
 	},
 	link: {
 		fontSize: 17,
-		color: "#00ECEC",
+		color: COLORS.secondary,
 		lineHeight: "25px",
 		fontWeight: 500,
 	},
 	button: {
 		background: "transparent",
-		border: "1px solid #00ECEC",
+		border: `1px solid ${COLORS.secondary}`,
 		width: 150,
 		height: 40,
 		borderRadius: 8,
@@ -122,7 +123,7 @@ const styles = StyleSheet.create({
 		fontWeight: 500,
 		textAlign: "center",
 		alignItems: "center",
-		color: "#ffffff",
+		color: COLORS.white,
 	},
 });
 

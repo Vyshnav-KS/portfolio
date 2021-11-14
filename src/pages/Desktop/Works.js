@@ -2,8 +2,54 @@ import React from "react";
 import { StyleSheet, css } from "aphrodite";
 import Header from "../../components/Header/Header";
 import { COLORS } from "../../styles/constants";
+import { useState } from "react";
 
 const Works = () => {
+	const [projects, setProjects] = useState([
+		{
+			id: 1,
+			title: "PORTFOLIO WEBSITE",
+			description:
+				"A portfolio website created using react js which shows resume, works, services, contact info and about me.",
+			url: "https://github.com/Vyshnav-KS/portfolio",
+		},
+		{
+			id: 2,
+			title: "DAILY NEWS",
+			description:
+				"A flutter app that provides latest news which users can filter corresponding to their favourite categories.",
+			url: "https://github.com/Vyshnav-KS/DailyNews",
+		},
+		{
+			id: 3,
+			title: "HACKCLUB CUCEK WEBSITE",
+			description:
+				"Worked on front-end part of Hack Club CUCEK community website.",
+			url: "https://github.com/hackclub-cucek/v4",
+		},
+		{
+			id: 4,
+			title: "MOVIEZONE",
+			description:
+				"A web app build using react js which user can search their favourite movies or tv shows, see trailers, cast information, posters, etc.",
+			url: "https://github.com/Vyshnav-KS/Moviezone",
+		},
+		{
+			id: 5,
+			title: "DAILYDO",
+			description:
+				"A todo flutter mobile application where users can create an account and add daily tasks. Users can also login and logout.",
+			url: "https://github.com/Vyshnav-KS/Daily-Do",
+		},
+		{
+			id: 6,
+			title: "QUOTE BOT",
+			description:
+				"A discord bot which replies encouraging quotes when a sad word is said by user. Build using nodejs and express js.",
+			url: "https://github.com/Vyshnav-KS/Quote-Bot",
+		},
+	]);
+
 	return (
 		<div className={css(classes.root)}>
 			<Header />
@@ -11,115 +57,22 @@ const Works = () => {
 				<span className={css(classes.title)}>PORTFOLIO</span>
 				<div className={css(classes.cards)}>
 					<div className={css(classes.card_r)}>
-						<div className={css(classes.card)}>
-							<span className={css(classes.card_title)}>PORTFOLIO WEBSITE</span>
-							<span className={css(classes.card_desc)}>
-								A portfolio website created using react js which shows resume,
-								works, services, contact info and about me.
-							</span>
-							<button
-								className={css(classes.card_button)}
-								onClick={() => {
-									window.open(
-										"https://github.com/Vyshnav-KS/portfolio",
-										"_blank"
-									);
-								}}
-							>
-								KNOW MORE
-							</button>
-						</div>
-						<div className={css(classes.card)}>
-							<span className={css(classes.card_title)}>DAILY NEWS</span>
-							<span className={css(classes.card_desc)}>
-								A flutter app that provides latest news which users can filter
-								corresponding to their favourite categories.
-							</span>
-							<button
-								className={css(classes.card_button)}
-								onClick={() => {
-									window.open(
-										"https://github.com/Vyshnav-KS/DailyNews",
-										"_blank"
-									);
-								}}
-							>
-								KNOW MORE
-							</button>
-						</div>
-						<div className={css(classes.card)}>
-							<span className={css(classes.card_title)}>
-								HACKCLUB CUCEK WEBSITE
-							</span>
-							<span className={css(classes.card_desc)}>
-								Worked on front-end part of Hack Club CUCEK community website.
-							</span>
-							<button
-								className={css(classes.card_button)}
-								onClick={() => {
-									window.open("https://github.com/hackclub-cucek/v4", "_blank");
-								}}
-							>
-								KNOW MORE
-							</button>
-						</div>
-					</div>
-					<div className={css(classes.card_r)}>
-						<div className={css(classes.card)}>
-							<span className={css(classes.card_title)}>MOVIEZONE</span>
-							<span className={css(classes.card_desc)}>
-								A web app build using react js which user can search their
-								favourite movies or tv shows, see trailers, cast information,
-								posters, etc.
-							</span>
-							<button
-								className={css(classes.card_button)}
-								onClick={() => {
-									window.open(
-										"https://github.com/Vyshnav-KS/Moviezone",
-										"_blank"
-									);
-								}}
-							>
-								KNOW MORE
-							</button>
-						</div>
-						<div className={css(classes.card)}>
-							<span className={css(classes.card_title)}>DAILYDO</span>
-							<span className={css(classes.card_desc)}>
-								A todo flutter mobile application where users can create an
-								account and add daily tasks. Users can also login and logout.
-							</span>
-							<button
-								className={css(classes.card_button)}
-								onClick={() => {
-									window.open(
-										"https://github.com/Vyshnav-KS/Daily-Do",
-										"_blank"
-									);
-								}}
-							>
-								KNOW MORE
-							</button>
-						</div>
-						<div className={css(classes.card)}>
-							<span className={css(classes.card_title)}>QUOTE BOT</span>
-							<span className={css(classes.card_desc)}>
-								A discord bot which replies encouraging quotes when a sad word
-								is said by user. Build using nodejs and express js.
-							</span>
-							<button
-								className={css(classes.card_button)}
-								onClick={() => {
-									window.open(
-										"https://github.com/Vyshnav-KS/Quote-Bot",
-										"_blank"
-									);
-								}}
-							>
-								KNOW MORE
-							</button>
-						</div>
+						{projects.map((project) => (
+							<div className={css(classes.card)} key={project.id}>
+								<span className={css(classes.card_title)}>{project.title}</span>
+								<span className={css(classes.card_desc)}>
+									{project.description}
+								</span>
+								<button
+									className={css(classes.card_button)}
+									onClick={() => {
+										window.open(project.url, "_blank");
+									}}
+								>
+									KNOW MORE
+								</button>
+							</div>
+						))}
 					</div>
 				</div>
 				<button
@@ -185,17 +138,20 @@ const classes = StyleSheet.create({
 		justifyContent: "space-between",
 	},
 	card_r: {
-		display: "flex",
-		flexDirection: "row",
+		display: "grid",
+		gridTemplateColumns: "repeat(3, 1fr)",
 		width: "100%",
 		marginLeft: "auto",
 		marginRight: "auto",
 		marginBottom: 14,
+		gap: 16,
 		"@media (max-width: 1536px)": {
 			marginBottom: 11.2,
+			gap: 12,
 		},
 		"@media (max-width: 1280px)": {
 			marginBottom: 9.3,
+			gap: 10,
 		},
 	},
 	card: {
@@ -203,7 +159,6 @@ const classes = StyleSheet.create({
 		padding: "12px 18px",
 		borderRadius: 8,
 		maxHeight: 178,
-		marginRight: 14,
 		backgroundColor: COLORS.primary_shade,
 		justifyContent: "space-between",
 		display: "flex",
@@ -214,14 +169,12 @@ const classes = StyleSheet.create({
 			padding: "9.6px 14.4px",
 			borderRadius: 6.4,
 			maxHeight: 142,
-			marginRight: 11.2,
 		},
 		"@media (max-width: 1280px)": {
 			minWidth: 269,
 			padding: "8px 12px",
 			borderRadius: 5.3,
 			maxHeight: 119,
-			marginRight: 9.3,
 		},
 	},
 	card_title: {

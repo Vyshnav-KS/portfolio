@@ -5,6 +5,7 @@ import { COLORS } from "../../styles/constants";
 import { useState } from "react";
 
 const Works = () => {
+	const temp = true;
 	const [projects, setProjects] = useState([
 		{
 			id: 1,
@@ -49,6 +50,10 @@ const Works = () => {
 			url: "https://github.com/Vyshnav-KS/Quote-Bot",
 		},
 	]);
+
+	if (temp === false) {
+		setProjects(null);
+	}
 
 	return (
 		<div className={css(classes.root)}>

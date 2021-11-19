@@ -20,7 +20,7 @@ const HomeMobile = () => {
 					className={css(styles.button)}
 					onTouchStart={() => {
 						window.open(
-							"https://drive.google.com/file/d/1eqYQHKm5lHeK3iwiW1l5kSIHLpZdmoB4/view?usp=sharing",
+							"https://drive.google.com/file/d/1riOppRrSATQHXpe6jsb3esmGWCMSW60F/view?usp=sharing",
 							"_blank"
 						);
 					}}

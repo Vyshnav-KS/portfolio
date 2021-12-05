@@ -102,16 +102,16 @@ const classes = StyleSheet.create({
 		marginRight: "auto",
 		maxWidth: 1241,
 		minHeight: 420,
-		marginTop: 170,
+		marginTop: 150,
 		"@media (max-width: 1536px)": {
 			maxWidth: 993,
 			minHeight: 336,
-			marginTop: 136,
+			marginTop: 120,
 		},
 		"@media (max-width: 1280px)": {
 			maxWidth: 827,
 			minHeight: 280,
-			marginTop: 113,
+			marginTop: 100,
 		},
 	},
 	title: {

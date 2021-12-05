@@ -109,16 +109,16 @@ const classes = StyleSheet.create({
 		marginRight: "auto",
 		maxWidth: 1241,
 		minHeight: 420,
-		marginTop: 160,
+		marginTop: 100,
 		"@media (max-width: 1536px)": {
 			width: 993,
 			maxHeight: 336,
-			marginTop: 128,
+			marginTop: 80,
 		},
 		"@media (max-width: 1280px)": {
 			width: 827,
 			maxHeight: 280,
-			marginTop: 107,
+			marginTop: 67,
 		},
 	},
 	title: {

@@ -4,7 +4,7 @@
 A portfolio website build using create react app.
 
 - To dislay my projects,
-- My skills and services
+- Skills and services
 - Resume 
 - Contact and other info
 ## Run Locally
@@ -36,12 +36,18 @@ Start the server
 
 ## Screenshots
 #### Desktop
-![App Screenshot](https://raw.githubusercontent.com/Vyshnav-KS/portfolio/main/src/assets/ghub/hdesk.png)
+<img src="https://raw.githubusercontent.com/Vyshnav-KS/portfolio/main/src/assets/ghub/hdesk.png" alt="Desktop" style="max-height: 720px; max-width:1280px;"/>
 
-![App Screenshot](https://raw.githubusercontent.com/Vyshnav-KS/portfolio/main/src/assets/ghub/hwork.png)
+<img src="https://raw.githubusercontent.com/Vyshnav-KS/portfolio/main/src/assets/ghub/hwork.png" alt="Desktop" style="max-height: 720px; max-width:1280px;"/>
+
+
+
 
 #### Mobile
-![App Screenshot](https://raw.githubusercontent.com/Vyshnav-KS/portfolio/main/src/assets/ghub/hmob.png)
-
-![App Screenshot](https://raw.githubusercontent.com/Vyshnav-KS/portfolio/main/src/assets/ghub/mwork.png)
+<div style="display: flex;">
+<img src="https://raw.githubusercontent.com/Vyshnav-KS/portfolio/main/src/assets/ghub/hmob.png" alt="Mob" style="height: 750px; width:400px;"/>
+  
+<img src="https://raw.githubusercontent.com/Vyshnav-KS/portfolio/main/src/assets/ghub/mwork.png" alt="Mob" style="height: 750px; width:400px;"/>
+</div>
+ 
 

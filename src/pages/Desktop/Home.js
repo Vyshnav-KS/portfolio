@@ -20,12 +20,12 @@ const Home = () => {
 						className={css(classes.button)}
 						onClick={() => {
 							window.open(
-								"https://drive.google.com/file/d/1riOppRrSATQHXpe6jsb3esmGWCMSW60F/view?usp=sharing",
+								"https://drive.google.com/file/d/1ggjZ6VdILhlW8NuDjErmGNJ8QZyN9-eM/view?usp=sharing",
 								"_blank"
 							);
 						}}
 					>
-						DOWNLOAD CV
+						VIEW RESUME
 					</button>
 				</div>
 				<div className={css(classes.image)}>

@@ -100,6 +100,7 @@ const classes = StyleSheet.create({
 	root: {
 		display: "flex",
 		flexDirection: "column",
+		
 	},
 	container: {
 		display: "flex",

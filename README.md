@@ -3,7 +3,7 @@
 
 A portfolio website build using create react app.
 
-- To dislay my projects,
+- To display my projects,
 - Skills and services
 - Resume 
 - Contact and other info

@@ -11,16 +11,16 @@ const Home = () => {
 			<div className={css(classes.container)}>
 				<div className={css(classes.leftContainer)}>
 					<span className={css(classes.name)}>Hey! I'm Vyshnav</span>
-					<span className={css(classes.title)}>FRONT-END DEVELOPER</span>
+					<span className={css(classes.title)}>FULLSTACK ENGINEER</span>
 					<span className={css(classes.description)}>
-						I like to craft solid and scalable frontend products with great user
+						I like to craft solid and scalable products with great user
 						experiences.
 					</span>
 					<button
 						className={css(classes.button)}
 						onClick={() => {
 							window.open(
-								"https://drive.google.com/file/d/1ggjZ6VdILhlW8NuDjErmGNJ8QZyN9-eM/view?usp=sharing",
+								"https://drive.google.com/file/d/1ZIwaqVmPbz8eJod2IDxFwnYIX7FjI7nY/view",
 								"_blank"
 							);
 						}}

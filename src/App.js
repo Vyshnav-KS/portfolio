@@ -106,12 +106,13 @@ function App() {
       {/* Hero */}
       <section className="hero">
         <div className="container hero-container">
-          <div className="hero-top">
-            <span className="hero-available">
-              <span className="avail-dot" /> Available for opportunities
-            </span>
-          </div>
+          <div className="hero-top" />
           <div className="hero-mid">
+            {data.meta.available && (
+              <span className="hero-available">
+                <span className="avail-dot" /> Available for opportunities
+              </span>
+            )}
             <p className="hero-sup">
               {data.meta.title} <span className="hero-sep">/</span> {data.meta.location}
             </p>

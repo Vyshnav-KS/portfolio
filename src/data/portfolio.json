@@ -6,7 +6,8 @@
     "location": "Kochi, India",
     "email": "vyshnavks85@gmail.com",
     "github": "https://github.com/Vyshnav-KS",
-    "linkedin": "https://linkedin.com/in/vyshnav-ks"
+    "linkedin": "https://linkedin.com/in/vyshnav-ks",
+    "available": false
   },
   "bio": "Backend engineer based in Kochi. I write Python for a living, argue with APIs daily, and touch the frontend only when necessary. Currently building systems where milliseconds actually matter.",
   "skills": [

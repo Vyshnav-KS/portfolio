@@ -1,53 +1,29 @@
+# vks. — Personal Portfolio
 
-# Portfolio Website
+Personal portfolio of **Vyshnav K S**, Backend Engineer based in Kochi, India.
 
-A portfolio website build using create react app.
+Built with React, deployed on Vercel. Content is managed through a single JSON file — no code changes needed to update text.
 
-- To display my projects,
-- Skills and services
-- Resume 
-- Contact and other info
+## Tech
+
+- React (Create React App)
+- Plain CSS with custom properties
+- Google Fonts — Syne + Inter
+- Content via `src/data/portfolio.json`
+
 ## Run Locally
 
-Clone the project
-
 ```bash
-  git clone https://github.com/Vyshnav-KS/portfolio.git
+git clone https://github.com/Vyshnav-KS/portfolio.git
+cd portfolio
+yarn install
+yarn start
 ```
 
-Go to the project directory
+## Update Content
 
-```bash
-  cd portfolio
-```
+All site content lives in [`src/data/portfolio.json`](src/data/portfolio.json). Edit that file to update bio, skills, experience, projects, or education — no component changes needed.
 
-Install dependencies
+## Deploy
 
-```bash
-    yarn install
-```
-
-Start the server
-
-```bash
-  yarn start
-```
-
-
-## Screenshots
-#### Desktop
-<img src="https://raw.githubusercontent.com/Vyshnav-KS/portfolio/main/src/assets/ghub/hdesk.png" alt="Desktop" style="max-height: 720px; max-width:1280px;"/>
-
-<img src="https://raw.githubusercontent.com/Vyshnav-KS/portfolio/main/src/assets/ghub/hwork.png" alt="Desktop" style="max-height: 720px; max-width:1280px;"/>
-
-
-
-
-#### Mobile
-<div style="display: flex;">
-<img src="https://raw.githubusercontent.com/Vyshnav-KS/portfolio/main/src/assets/ghub/hmob.png" alt="Mob" style="height: 750px; width:400px;"/>
-  
-<img src="https://raw.githubusercontent.com/Vyshnav-KS/portfolio/main/src/assets/ghub/mwork.png" alt="Mob" style="height: 750px; width:400px;"/>
-</div>
- 
-
+Deployed automatically on Vercel on every push to `main`.

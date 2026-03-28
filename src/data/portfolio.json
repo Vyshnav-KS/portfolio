@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "name": "Vyshnav K S",
+    "title": "Software Engineer",
+    "tagline": "Software engineer who mostly lives in the terminal.",
+    "location": "Kochi, India",
+    "email": "vyshnavks85@gmail.com",
+    "github": "https://github.com/Vyshnav-KS",
+    "linkedin": "https://linkedin.com/in/vyshnav-ks"
+  },
+  "bio": "Backend engineer based in Kochi. I write Python for a living, argue with APIs daily, and touch the frontend only when necessary. Currently building systems where milliseconds actually matter.",
+  "skills": [
+    {
+      "category": "Languages & Frameworks",
+      "items": ["Python", "Django", "FastAPI", "Java", "JavaScript"]
+    },
+    {
+      "category": "Databases & Caching",
+      "items": ["PostgreSQL", "PostGIS", "MongoDB", "Redis", "Pinecone", "ElasticSearch", "Firebase"]
+    },
+    {
+      "category": "AI / ML",
+      "items": ["LangChain", "LangGraph", "RAG", "OpenAI", "scikit-learn", "PyTorch", "TensorFlow"]
+    },
+    {
+      "category": "Infrastructure",
+      "items": ["Docker", "Nginx", "Azure", "GCP", "Linux", "WebSockets"]
+    },
+    {
+      "category": "Frontend",
+      "items": ["React JS", "OpenLayers", "Gatsby JS", "HTML/CSS"]
+    }
+  ],
+  "experience": [
+    {
+      "role": "Backend Engineer",
+      "company": "Crimson Energy Experts Pvt Ltd",
+      "location": "Kochi, Kerala",
+      "period": "January 2025 – Present"
+    },
+    {
+      "role": "Technology Analyst",
+      "company": "Invenics Services Pvt Ltd",
+      "location": "Kochi, Kerala",
+      "period": "August 2023 – August 2024"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Project One",
+      "subtitle": "Coming soon",
+      "description": "A short description of what this project does and the problem it solves.",
+      "tech": ["Python", "FastAPI", "PostgreSQL"],
+      "github": null
+    },
+    {
+      "name": "Project Two",
+      "subtitle": "Coming soon",
+      "description": "A short description of what this project does and the problem it solves.",
+      "tech": ["Django", "React", "Docker"],
+      "github": null
+    },
+    {
+      "name": "Project Three",
+      "subtitle": "Coming soon",
+      "description": "A short description of what this project does and the problem it solves.",
+      "tech": ["LangChain", "FastAPI", "Redis"],
+      "github": null
+    }
+  ],
+  "education": {
+    "degree": "B.Tech in Computer Science and Engineering",
+    "institution": "Cochin University of Science and Technology (CUSAT)",
+    "period": "July 2019 – May 2023",
+    "gpa": "7.9 / 10.0"
+  }
+}

@@ -435,6 +435,12 @@ body {
   transform: translateY(-2px);
 }
 
+.project-card--link {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
 .project-top {
   display: flex;
   flex-direction: column;

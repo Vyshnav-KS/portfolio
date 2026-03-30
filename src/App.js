@@ -202,20 +202,38 @@ function App() {
           </div>
           <div className="section-content">
             <div className="projects-grid">
-              {data.projects.map((project, i) => (
-                <div className="project-card" key={i}>
-                  <div className="project-top">
-                    <span className="project-name">{project.name}</span>
-                    <span className="project-sub">{project.subtitle}</span>
+              {data.projects.map((project, i) => {
+                const url = project.github || project.link || null;
+                const inner = (
+                  <>
+                    <div className="project-top">
+                      <span className="project-name">{project.name}</span>
+                      <span className="project-sub">{project.subtitle}</span>
+                    </div>
+                    <p className="project-desc">{project.description}</p>
+                    <div className="project-tags">
+                      {project.tech.map((t, j) => (
+                        <span className="tag" key={j}>{t}</span>
+                      ))}
+                    </div>
+                  </>
+                );
+                return url ? (
+                  <a
+                    key={i}
+                    href={url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-card project-card--link"
+                  >
+                    {inner}
+                  </a>
+                ) : (
+                  <div className="project-card" key={i}>
+                    {inner}
                   </div>
-                  <p className="project-desc">{project.description}</p>
-                  <div className="project-tags">
-                    {project.tech.map((t, j) => (
-                      <span className="tag" key={j}>{t}</span>
-                    ))}
-                  </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         </div>

@@ -1,56 +1,54 @@
 import React from "react";
 import { css, StyleSheet } from "aphrodite";
 import { COLORS } from "../../styles/constants";
+import portfolioData from "../../data/portfolio.json";
 
 const WorkMob = () => {
+	const projects = portfolioData.projects;
+
 	return (
 		<div className={css(styles.root)}>
 			<div className={css(styles.container)}>
 				<div className={css(styles.heading)}>PORTFOLIO</div>
-				<div className={css(styles.card)}>
-					<div className={css(styles.title)}>PORTFOLIO WEBSITE</div>
-					<div className={css(styles.description)}>
-						A portfolio website created using react js which shows resume,
-						works, services, contact info and about me.
-					</div>
-					<div
-						className={css(styles.link)}
-						onTouchStart={() => {
-							window.open("https://github.com/Vyshnav-KS/portfolio", "_blank");
-						}}
-					>
-						know more
-					</div>
-				</div>
-				<div className={css(styles.card)}>
-					<div className={css(styles.title)}>HACKCLUB CUCEK WEBSITE</div>
-					<div className={css(styles.description)}>
-						Worked on front-end part of Hack Club CUCEK community website.
-					</div>
-					<div
-						className={css(styles.link)}
-						onTouchStart={() => {
-							window.open("https://github.com/hackclub-cucek/v4", "_blank");
-						}}
-					>
-						know more
-					</div>
-				</div>
-				<div className={css(styles.card)}>
-					<div className={css(styles.title)}>MOVIEZONE</div>
-					<div className={css(styles.description)}>
-						A web app build using react js which user can search their favourite
-						movies or tv shows, see trailers, cast information, posters, etc.
-					</div>
-					<div
-						className={css(styles.link)}
-						onTouchStart={() => {
-							window.open("https://github.com/Vyshnav-KS/Moviezone", "_blank");
-						}}
-					>
-						know more
-					</div>
-				</div>
+				{projects.map((project, index) => {
+					const url = project.github || project.link || null;
+					const inner = (
+						<>
+							<div>
+								<div className={css(styles.title)}>
+									{project.name.toUpperCase()}
+								</div>
+								<div className={css(styles.subtitle)}>{project.subtitle}</div>
+								<div className={css(styles.description)}>
+									{project.description}
+								</div>
+							</div>
+							<div className={css(styles.tech_row)}>
+								{project.tech.map((t) => (
+									<span key={t} className={css(styles.tech_chip)}>
+										{t}
+									</span>
+								))}
+							</div>
+						</>
+					);
+
+					return url ? (
+						<a
+							key={index}
+							href={url}
+							target="_blank"
+							rel="noopener noreferrer"
+							className={css(styles.card, styles.card_clickable)}
+						>
+							{inner}
+						</a>
+					) : (
+						<div key={index} className={css(styles.card)}>
+							{inner}
+						</div>
+					);
+				})}
 				<button
 					className={css(styles.button)}
 					onTouchStart={() => {
@@ -77,7 +75,7 @@ const styles = StyleSheet.create({
 		display: "flex",
 		flexDirection: "column",
 		width: "100%",
-		rowGap: 17,
+		rowGap: 14,
 	},
 	heading: {
 		fontSize: 24,
@@ -88,28 +86,48 @@ const styles = StyleSheet.create({
 	card: {
 		background: COLORS.primary_shade,
 		borderRadius: 8,
-		padding: "8px 18px",
-		minHeight: 157,
+		padding: "12px 16px",
 		display: "flex",
 		flexDirection: "column",
-		justifyContent: "space-between",
+		gap: 12,
+		textDecoration: "none",
+		color: "inherit",
+	},
+	card_clickable: {
+		cursor: "pointer",
 	},
 	title: {
-		fontSize: 20,
-		lineHeight: "30px",
+		fontSize: 18,
+		lineHeight: "27px",
 		fontWeight: 600,
 		color: COLORS.secondary,
 	},
-	description: {
-		fontSize: 17,
-		lineHeight: "25px",
-		color: COLORS.white,
-	},
-	link: {
-		fontSize: 17,
+	subtitle: {
+		fontSize: 12,
+		lineHeight: "18px",
 		color: COLORS.secondary,
-		lineHeight: "25px",
-		fontWeight: 500,
+		opacity: 0.7,
+		marginTop: 2,
+	},
+	description: {
+		fontSize: 14,
+		lineHeight: "22px",
+		color: COLORS.white,
+		marginTop: 6,
+	},
+	tech_row: {
+		display: "flex",
+		flexWrap: "wrap",
+		gap: 6,
+	},
+	tech_chip: {
+		fontSize: 11,
+		lineHeight: "16px",
+		color: COLORS.secondary,
+		border: `1px solid ${COLORS.secondary}`,
+		borderRadius: 4,
+		padding: "2px 8px",
+		opacity: 0.85,
 	},
 	button: {
 		background: "transparent",
@@ -122,8 +140,8 @@ const styles = StyleSheet.create({
 		marginBottom: 24,
 		fontWeight: 500,
 		textAlign: "center",
-		alignItems: "center",
 		color: COLORS.white,
+		cursor: "pointer",
 	},
 });
 

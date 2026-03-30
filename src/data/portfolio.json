@@ -9,7 +9,7 @@
     "linkedin": "https://linkedin.com/in/vyshnav-ks",
     "available": false
   },
-  "bio": "Backend engineer based in Kochi. I write Python for a living, argue with APIs daily, and touch the frontend only when necessary. Currently building systems where milliseconds actually matter.",
+  "bio": "Backend engineer based in Kochi. I write Python for a living, build AI agents, and argue with APIs daily. Currently working on systems where milliseconds actually matter.",
   "skills": [
     {
       "category": "Languages & Frameworks",
@@ -48,25 +48,32 @@
   ],
   "projects": [
     {
-      "name": "Project One",
+      "name": "Explainr",
       "subtitle": "Coming soon",
-      "description": "A short description of what this project does and the problem it solves.",
-      "tech": ["Python", "FastAPI", "PostgreSQL"],
+      "description": "A multimodal AI system that transforms academic papers into interactive, illustrated experiences — analogies, memes, animated diagrams, and gamified quizzes.",
+      "tech": ["Python", "FastAPI", "LangChain", "React"],
       "github": null
     },
     {
-      "name": "Project Two",
-      "subtitle": "Coming soon",
-      "description": "A short description of what this project does and the problem it solves.",
-      "tech": ["Django", "React", "Docker"],
-      "github": null
+      "name": "Medico Bot",
+      "subtitle": "AI-powered medical assistant with PubMed citations",
+      "description": "A RAG-based chatbot for medical students that answers questions using semantic search over a medical knowledge base, with cited PubMed references and multi-turn conversation history.",
+      "tech": ["LangChain", "OpenAI", "Pinecone", "Cohere", "Streamlit"],
+      "github": "https://github.com/Vyshnav-KS/medico-bot"
     },
     {
-      "name": "Project Three",
-      "subtitle": "Coming soon",
-      "description": "A short description of what this project does and the problem it solves.",
-      "tech": ["LangChain", "FastAPI", "Redis"],
-      "github": null
+      "name": "FinTrack",
+      "subtitle": "Collaborative personal finance tracker",
+      "description": "Track income, expenses, investments, and accounts with JWT auth, interactive dashboard charts, and read-only collaboration via WhatsApp invites. Duolingo-inspired UI with plain CSS.",
+      "tech": ["Django", "React", "DRF", "SimpleJWT", "Recharts", "SQLite"],
+      "github": "https://github.com/Vyshnav-KS/fintrack"
+    },
+    {
+      "name": "AMACO",
+      "subtitle": "Construction equipment supplier website",
+      "description": "Full website for a UAE-based construction equipment and machinery trading company — product catalog, brand pages, blog, services, and WhatsApp-integrated lead generation.",
+      "tech": ["React", "Vite", "SEO"],
+      "link": "https://amacoae.com"
     }
   ],
   "education": {

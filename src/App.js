@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import data from "./data/portfolio.json";
 import "./App.css";
-import { Analytics } from '@vercel/analytics/dist/react';
+import { inject } from '@vercel/analytics';
+
+inject();
 
 const IconGitHub = () => (
   <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
